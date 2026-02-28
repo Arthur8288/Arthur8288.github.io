@@ -35,15 +35,35 @@
             margin-top: 20px;
         }
 
-        .project-card a {
+        .project-meta {
+            margin-top: -6px;
+            margin-bottom: 12px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            margin-left: 8px;
+            border-radius: 999px;
+            background: #eef3ff;
+            color: #2a4dbd;
+            font-size: 12px;
+            font-weight: 700;
+            vertical-align: middle;
+        }
+
+        .links a {
             display: inline-block;
             margin-top: 10px;
+            margin-right: 14px;
             text-decoration: none;
             color: #0066cc;
             font-weight: bold;
         }
 
-        .project-card a:hover {
+        .links a:hover {
             text-decoration: underline;
         }
     </style>
@@ -56,19 +76,57 @@
 
         <h2>Projects</h2>
 
+        <!-- Project 2 (p2_gold) -->
         <div class="project-card">
-            <h3>The Legend of Zelda NES (Unity Remaster)</h3>
+            <h3>
+                Apples Keep the Doctors Away
+                <span class="tag">p2_gold</span>
+            </h3>
+            <div class="project-meta">
+                Stealth-Action • Unity • C#
+            </div>
             <p>
-                <p>
-                    I implemented core gameplay systems including health and damage handling, inventory management,
-                    and pickup/collector mechanics. I developed most enemy AI behaviors and interactions, 
-                    designed custom puzzle-focused levels, and created the fairy control system with custom logic for movement, and resource limitations using modular C# architecture.
-</p>
-
+                A stealth-action game where the player must collect apples while avoiding detection
+                from patrolling doctors. I independently designed and implemented the entire project,
+                including player movement systems, enemy AI behaviors, detection logic, collision handling,
+                and core gameplay loops using modular C# architecture in Unity.
             </p>
-            <a href="https://fat-carrot.itch.io/the-legend-of-zelda-nes-unity-remaster">Play the Game →</a>
+            <p>
+                The game was developed iteratively through repeated playtesting and refinement.
+                Mechanics such as vision detection, movement responsiveness, and level layout were
+                continuously adjusted to improve tension, clarity, and player experience.
+            </p>
+
+            <div class="links">
+                <a href="https://fat-carrot.itch.io/an-apple-keeps-the-doctor-away" target="_blank" rel="noopener noreferrer">
+                    Play the Game →
+                </a>
+            </div>
         </div>
+
+        <!-- Project 1 (p1_gold) -->
+        <div class="project-card">
+            <h3>
+                The Legend of Zelda NES (Unity Remaster)
+                <span class="tag">p1_gold</span>
+            </h3>
+            <div class="project-meta">
+                Action-Adventure • Unity • C#
+            </div>
+            <p>
+                I implemented core gameplay systems including health and damage handling, inventory management,
+                and pickup/collector mechanics. I developed most enemy AI behaviors and interactions,
+                designed custom puzzle-focused levels, and created the fairy control system with custom logic for
+                movement and resource limitations using modular C# architecture.
+            </p>
+
+            <div class="links">
+                <a href="https://fat-carrot.itch.io/the-legend-of-zelda-nes-unity-remaster" target="_blank" rel="noopener noreferrer">
+                    Play the Game →
+                </a>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
-
